@@ -29,9 +29,20 @@ while pilihan != 0 :
             print("======================================")
             print("\tSELAMAT DATANG")
             print("======================================")
-            print ("Anda telah login")
-        else:
-            print ("Nama atau password anda salah")
+            print ("\nAnda telah login silahkan pilih akses di bawah ini")
+            print("1. Tampilkan data")
+            print("2. Hapus data")
+            
+            pilihan = int(input("masukan pilihan anda : "))
+            print('')
+            print('')
+            if pilihan == 1 :
+                penentu = True
+                for i in range (len(nama)) :
+                    if penentu :
+                        print ("nama\talamat\ttelepon")
+                    print (nama[i]['nama'],'\t',alamat[i]['alamat'],'\t',telepon[i]['nomor telepon'])
+                    penentu = False
     elif pilihan == 2 :
         print("Silahkan lengkapi data untuk menjadi nasabah kami : ")
         masnama = input("Masukkan nama : ")
