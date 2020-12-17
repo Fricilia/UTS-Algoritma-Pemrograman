@@ -34,7 +34,7 @@ while pilihan != 0 :
             print ("Nama atau password anda salah")
     elif pilihan == 2 :
         print("Silahkan lengkapi data untuk menjadi nasabah kami : ")
-        masnam = input("Masukkan nama : ")
+        masnama = input("Masukkan nama : ")
         nama.append({'nama' : masnama})
         masmat = input("Masukkan alamat : ")
         alamat.append({'alamat' : masmat})
