@@ -1,1 +1,43 @@
+nama = []
+alamat = []
+telepon = []
 
+print("================================================")
+print("=\tUTS Algoritma & Pemrograman            =")               
+print("=\tNama : Fricilia Yessi Eka Putri        =")           
+print("=\tNIM  : 33420409                        =")                           
+print("=\tKelas: IK1E                            =")
+print("================================================\n")
+print("\tLayanan Bank Sampah se Kecamatan Boja\n")
+print("Silahkan login sebagai")
+
+pilihan = 1
+while pilihan != 0 :
+    print ("1. Admin.")
+    print ("2. Nasabah.")
+    print ("0. exit.")
+    
+    pilihan = int(input("Masukan pilihan anda : "))
+    print('')
+    print('')
+    print('')
+    if pilihan == 1 :
+        username = str(input("Masukkan username anda : "))
+        import getpass
+        password = str(input("Masukkan paswword anda : "))
+        if(username=='Fricilia' and password=='33420409') :
+            print("======================================")
+            print("\tSELAMAT DATANG")
+            print("======================================")
+            print ("Anda telah login")
+        else:
+            print ("Nama atau password anda salah")
+    elif pilihan == 2 :
+        print("Silahkan lengkapi data untuk menjadi nasabah kami : ")
+        masnam = input("Masukkan nama : ")
+        nama.append({'nama' : masnama})
+        masmat = input("Masukkan alamat : ")
+        alamat.append({'alamat' : masmat})
+        masnotelp = input("Masukkan nomor telepon : ")
+        telepon.append({'nomor telepon' : masnotelp})
+        
