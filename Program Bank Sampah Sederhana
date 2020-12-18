@@ -72,7 +72,7 @@ while pilihan != 0 :
                         del alamat[i]
                         del telepon[i]
                         break
-           else:
+            else:
                 print ("Nama atau password anda salah")
          
     elif pilihan == 2 :
