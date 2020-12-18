@@ -2,6 +2,26 @@ nama = []
 alamat = []
 telepon = []
 
+def harga():
+    print("1. kertas \n2. plastik \n3. logam")
+    jenis_sampah_anda = int(input("Apa jenis sampah anda? "))
+    berat_sampah = float(input("Berapa kilo sampah anda? "))
+    if pilihan == 1:
+        sampah_kertas = berat_sampah * 2000
+        print()
+        print("Harga Sampah: ",sampah_kertas)
+        print()
+    elif pilihan == 2 :
+        sampah_plastik = berat_sampah * 5000
+        print()
+        print("Harga sampah : ",sampah_plastik)
+        print()
+    else:
+        sampah_logam = berat_sampah * 8000
+        print()
+        print("Harga sampah: ",sampah_logam)
+        print()
+        
 print("================================================")
 print("=\tUTS Algoritma & Pemrograman            =")               
 print("=\tNama : Fricilia Yessi Eka Putri        =")           
